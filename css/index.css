@@ -9,41 +9,29 @@
 .container{
     display: flex;
     flex-direction: row;
-    /*justify-content:inherit;*/
-    /*flex-direction: column;*/
+    justify-content: space-evenly;
     background-color: rgb(183, 190, 196);
     width:100%;
     height:116vh;
-    padding: 5px;
-    gap:0px;
-
 }
 
 
-.lev-nav-container{
+.left-nav-container{
+    position: absolute;
+    left: 0%;
     display: flex;
-    height: 113vh;
-    width:30%;
-    padding: 5px;
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*border-radius: 15px;
-    background-color: rgb(22, 230, 160);*/
-    margin-left: 5px;
-    margin-top:5px;
+    height: 116vh;
+    width: fit-content;
+    padding-right: 3px;
 }
 
 .sidebar{
-    height: 96%;
-    width:85%;
+    height: 705px;
     padding: 10px;
-   /* justify-content: center;*/
     align-items: center;
-    border-radius: 15px;
+    border-radius: 0px 15px 15px 0px;
     background-color: rgb(254, 255, 255);
     display: flex;
-    margin-left: 10px;
-    margin-top:5px;
     gap:15px;
 
 }
@@ -56,7 +44,6 @@
 .logos{
     height: 100%;
     width:80%;
-    gap: 17px;
     
 }
 
@@ -235,14 +222,13 @@
     margin-top: 2px;    
 }
 .right-nav-container{
+    position: absolute;
+    right: 0;
     display: flex;
     flex-direction: column;
     height: 113vh;
-    width:70%;
-    padding: 5px;
-    margin-left:0;
-    margin-right:0;
-    gap:15px;
+    width:73%;
+    padding: 2px;
 }
 .content{
     background-color: rgb(121, 250, 250);
@@ -321,4 +307,9 @@
     height:100%;
     justify-content: center;
 
+}
+
+#button-id{
+    border-radius: 15px;
+    background-color: aqua;
 }

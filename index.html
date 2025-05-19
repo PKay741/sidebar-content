@@ -5,17 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidebar Content</title>
     <link  rel="stylesheet" href="css/index.css">
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
 </head>
 <body>
     <section class="container">
-        <section class="left-nav-container">
+        <!--<section class="left-nav-container">-->
             <section class="sidebar">
                 <section class="left-section">
                     <section class="logos">
                         <div class="top">
                             <ul>
             
-                                <li><img src="images/960-9601714_yellow-circle-png.png" alt="dots" height="13" width="44"></li>
+                                <li><img src="images/960-9601714_yellow-circle-png.png" alt="dots" height="13" width="44" class="dot"></li>
                                 <li><img src="images/square.svg" alt="cube" height="20" width="20"><br></li>         
                                 <li><img src="images/divide-square.svg" alt="#"  height="20" width="20"><br></li>
                                 <li><img src="images/folder.svg" alt="folder"  height="20" width="20"></li>
@@ -44,7 +48,7 @@
                 </section>
                
               
-                <section class="right-section">
+                <section class="right-section" id="sidebar">
                     <section class="menu">
                         <section class="untitled">
                             <div class="untitled-image">
@@ -157,9 +161,9 @@
             </section>
             
             
-        </section>
+        <!--</section>-->
 
-        <section class="right-nav-container">
+        <!--<section class="right-nav-container">-->
             <section class="content">
                 <section class="top-section">
                     <section class="left">
@@ -175,10 +179,19 @@
                     </section>
                 </section>
             </section>
-        </section>
+        <!--</section>-->
     
         
     </section>
-    
+    <!--<button id="button-id">side-button</button>-->
+    <script>
+        $(document).ready(function() {
+            $('.dot').click(function() {
+                $('#sidebar').toggle();
+            });
+        });
+    </script>
+   
+   <!--$("#button-id").click(function(){$("#sidebar").toggle()});-->
 </body>
 </html>
